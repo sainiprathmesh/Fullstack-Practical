@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical - 8</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #header {
+            color: white;
+            text-align: center;
+        }
+
+        #banner {
+            margin-top: 100px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 20px;
+            padding-left: 20px;
+            color: white;
+            font-family: Calibri, sans-serif;
+            font-size: x-large;
+            background-image: url("../img/Banner.jpg");
+            height: 720px;
+        }
+
+        #section2 {
+            width: 100%;
+            height: 550px;
+            text-align: center;
+        }
+
+        #footer {
+            margin: 10px;
+            color: black;
+            text-align: center;
+            height: 100px;
+        }
+
+        #footercontent {
+            margin-top: 20px;
+            background: pink;
+            width: 100%;
+            height: 100px;
+        }
+
+        #circles {
+            width: 100%;
+            height: 350px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #align {
+            margin-left: 70px;
+        }
+
+        #circle1 {
+            border-radius: 50%;
+            margin: 49px;
+            height: 225px;
+            width: 225px;
+            float: left;
+            background-image: url("../img/1.png");
+        }
+
+        #circle2 {
+            border-radius: 50%;
+            margin: 49px;
+            height: 225px;
+            width: 225px;
+            float: left;
+            background-image: url("../img/2.png");
+        }
+
+        #circle3 {
+            border-radius: 50%;
+            margin: 49px;
+            height: 225px;
+            width: 225px;
+            float: left;
+            background-image: url("../img/3.png");
+        }
+
+        #circle4 {
+            border-radius: 50%;
+            margin: 49px;
+            height: 225px;
+            width: 225px;
+            float: left;
+            background-image: url("../img/9.png");
+        }
+
+        #main-content {
+            float: left;
+            margin: 10px;
+            background-color: darkgrey;
+            color: black;
+            font-family: Calibri, sans-serif;
+            width: 49%;
+            height: 370px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 6mm;
+        }
+
+        #artical-1 {
+            float: right;
+            background-image: url("../img/p1.jpg");
+            margin: 10px;
+            color: black;
+            text-align: center;
+            font-family: Calibri, sans-serif;
+            width: 45%;
+            height: 100px;
+            padding-top: 10px;
+            font-size: x-large;
+        }
+
+        #artical-2 {
+            float: right;
+            background-image: url("../img/p2.jpeg");
+            margin: 10px;
+            color: Black;
+            text-align: center;
+            font-family: Calibri, sans-serif;
+            width: 45%;
+            height: 100px;
+            padding-top: 10px;
+            font-size: x-large;
+        }
+
+        #artical-3 {
+            float: right;
+            background-image: url("../img/p3.jpg");
+            margin: 10px;
+            color: black;
+            text-align: center;
+            font-family: Calibri, sans-serif;
+            width: 45%;
+            height: 100px;
+            padding-top: 10px;
+            font-size: x-large;
+        }
+
+        #boxes {
+            width: 100%;
+            height: 600px;
+            text-align: center;
+            font-size: 5mm;
+        }
+
+        ul {
+            list-style: none;
+            background: darkgray;
+            width: 100%;
+            height: 60px;
+            padding-top: 20px;
+            position: fixed;
+            top: 0px;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 5px;
+            width: 200px;
+            margin-left: 35px;
+        }
+
+        ul li a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: x-large;
+        }
+
+        ul li:hover {
+            display: inline-block;
+            padding: 5px;
+            background: white;
+        }
+
+        .box {
+            background: white;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 18px;
+            margin: 10px;
+            transition: transform .2s;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+        }
+
+        #a1 {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            width: 240px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #a1:hover {
+            color: white;
+            background-color: blue;
+        }
+
+        #a2 {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            width: 240px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #a2:hover {
+            color: white;
+            background-color: blue;
+        }
+
+        #a3 {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            width: 240px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #a3:hover {
+            color: white;
+            background-color: blue;
+        }
+
+        #a4 {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            width: 240px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #a4:hover {
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="section0">
+    <div id="header">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#circles">TEAM</a></li>
+            <li><a href="#section2">ABOUT US</a></li>
+            <li><a href="#boxes">TECHNOLOGIES</a></li>
+            <li><a href="#footer">CONTACT</a></li>
+        </ul>
+    </div>
+    <div id="banner">
+        <h1>PRACTICAL - 8</h1>
+    </div>
+</div>
+<div id="circles">
+    <h1>Team Members</h1>
+    <div id="align">
+        <div id="circle1" style=""></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+    </div>
+</div>
+<div id="section2">
+    <h1 style="margin-bottom: 30px">About Us</h1>
+    <div id="main-content">
+        <h1>About Projects</h1>
+        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum laborum,
+            nam natus neque non quas quod
+            totam unde voluptatibus. Aut culpa dignissimos libero magnam perferendis quam, vel. Accusamus aspernatur,
+            commodi consectetur corporis deserunt dicta distinctio doloremque dolorum eius eos error esse eveniet
+            explicabo facere facilis id illo ipsam ipsum minima molestias nam quibusdam recusandae reiciendis
+            repellendus, sint veniam voluptates! Dignissimos dolores earum iusto neque, placeat provident quo reiciendis
+            repellendus sunt voluptatum. Adipisci itaque laborum nisi officiis optio sequi, tempora?</p>
+    </div>
+    <div id="right-content">
+        <h1 id="artical-1">Project-1</h1>
+        <h1 id="artical-2">Project-2</h1>
+        <h1 id="artical-3">Project-3</h1>
+    </div>
+</div>
+<div id="boxes">
+    <h1 style="margin-bottom: 30px">Technologies Used</h1>
+    <div style="display: inline-block; float: left; margin: 30px">
+        <div class="box" style="box-shadow: 5px 10px 18px #888888">
+            <div>
+                <img alt="HTML !!!" height="183" src="../img/HTML.png" style="border-radius: 10px" width="275">
+            </div>
+            <h3 style="text-align: center">Introduction to HTML</h3>
+            <p style="width: 275px; text-align: justify; font-size: 5mm">Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit. Autem culpa dignissimos dolores eaque id itaque quaerat quis repellendus ut voluptatibus.</p>
+            <p align="center"><a href="p5-html.html" id="a1"><b>Read More</b></a></p>
+        </div>
+
+        <div class="box" style="box-shadow: 5px 10px 18px #888888">
+            <div>
+                <img alt="CSS !!!" height="183" src="../img/css.png" style="border-radius: 10px" width="275">
+            </div>
+            <h3 style="text-align: center">Introduction to CSS</h3>
+            <p style="width: 275px; text-align: justify; font-size: 5mm">Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit. Autem culpa dignissimos dolores eaque id itaque quaerat quis repellendus ut voluptatibus.</p>
+            <p align="center"><a href="p5-css.html" id="a2"><b>Read More</b></a></p>
+
+        </div>
+
+        <div class="box" style="box-shadow: 5px 10px 18px #888888">
+            <div>
+                <img alt="JavaScript !!!" height="183" src="../img/js.png" style="border-radius: 10px" width="275">
+            </div>
+            <h3 style="text-align: center">Introduction to JavaScript</h3>
+            <p style="width: 275px; text-align: justify; font-size: 5mm">Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit. Autem culpa dignissimos dolores eaque id itaque quaerat quis repellendus ut voluptatibus.</p>
+            <p align="center"><a href="p5-js.html" id="a3"><b>Read More</b></a></p>
+
+        </div>
+
+        <div class="box" style="box-shadow: 5px 10px 18px #888888">
+            <div>
+                <img alt="Bootstrap !!!" height="183" src="../img/boot.png" style="border-radius: 10px" width="275">
+            </div>
+            <h3 style="text-align: center">Introduction to Bootstrap</h3>
+            <p style="width: 275px; text-align: justify; font-size: 5mm">Lorem ipsum dolor sit amet, consectetur
+                adipisicing
+                elit. Autem culpa dignissimos dolores eaque id itaque quaerat quis repellendus ut voluptatibus.</p>
+            <p align="center"><a href="p5-bootstrap.html" id="a4"><b>Read More</b></a></p>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <h1>Contact</h1>
+    <div id="footercontent">
+        <p style="padding-top: 30px">Website template for Practical - 8</p>
+        <br>
+        <a href="#">Back to top</a>
+    </div>
+</div>
+</body>
+</html>
