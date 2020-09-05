@@ -2,9 +2,212 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <title>practical-11</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        table {
+            /*font-family: Calibri, sans-serif;*/
+            text-align: left;
+            line-height: 20px;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 2px solid blue;
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        table th {
+            padding-left: 15px;
+            line-height: 30px;
+            border-bottom: 2px solid darkgrey;
+        }
+
+        table tr:first-child {
+            background-color: blue;
+            color: white;
+            border: none;
+            line-height: 40px;
+            text-align: center;
+            /*padding:0 15px 0 20px;*/
+
+        }
+
+        table tr:hover {
+            background-color: lightgray;
+            cursor: default;
+        }
+
+        table tr:last-child td {
+            border: none;
+
+        }
+
+        table tr td:nth-child(1) {
+            width: 30px;
+            padding-left: 10px;
+        }
+
+        table tr td:nth-child(2) {
+            width: 500px;
+            padding-right: 8px;
+        }
+
+        table tr td:nth-child(3) {
+            padding-left: 20px;
+        }
+
+        table tr td:nth-child(4) {
+            padding-right: 2px;
+        }
+
+        table td {
+            border-bottom: 1px solid darkgrey;
+            height: 50px;
+        }
+
+        td:last-child {
+            text-align: center;
+        }
+
+        .status {
+            color: limegreen;
+            font-family: Calibri, sans-serif;
+        }
+
+        /*.material-icons button edit:hover{
+           color: blue;
+        }*/
+        /*.material-icons button delete:hover{*/
+        /*    color: red;*/
+        /*}*/
+    </style>
 </head>
 <body>
+<table>
+    <tr>
+        <th colspan="5">FullStack Live Practical Book</th>
+    </tr>
+    <tr>
+        <th>#</th>
+        <th>Practical Name</th>
+        <th>Link</th>
+        <th>Status</th>
+        <th style="margin-left: 100px">Tools</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Create a Web Page including HTML basic skeleton using offline HTML editor and online
+            sandbox environment.
+        </td>
+        <td><a href="p1.html">Practical-1</a></td>
+        <td class="status">Checked</td>
+        <td>
+            <i class="material-icons button edit" title="Edit">edit</i>
+            <i class="material-icons button delete" title="Delete">delete</i>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Live your first Web-Page on github.</td>
+        <td><a href="p2.html">Practical-2</a></td>
+        <td class="status">Checked</td>
+        <td>
+            <i class="material-icons button edit" title="Edit">edit</i>
+            <i class="material-icons button delete" title="Delete">delete</i>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Create a web page showing a basic html structure using character Entities and span Tag.</td>
+        <td><a href="p3.html">Practical-3</a></td>
+        <td class="status">Checked</td>
+        <td><i class="material-icons button edit" title="Edit">edit</i>
+            <i class="material-icons button delete" title="Delete">delete</i>
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Create a website having list of all practicals and their individual practical page
+            links.
+        </td>
+        <td><a href="p4.html">Practical-4</a></td>
+        <td class="status">Checked</td>
+        <td>
+            <i class="material-icons button edit" title="Edit">edit</i>
+            <i class="material-icons button delete" title="Delete">delete</i>
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Create a Web-Page showing the use of Image-Map in the Web Application</td>
+        <td><a href="p5.html">Practical-5</a></td>
+        <td class="status">Checked</td>
+        <td>
+            <i class="material-icons button edit" title="Edit">edit</i>
+            <i class="material-icons button delete" title="Delete">delete</i>
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Create the layout using CSS layout properties.</td>
+        <td><a href="p6.html">Practical-6</a></td>
+        <td class="status">Checked</td>
+        <td>
+            <i class="material-icons button edit" title="Edit">edit</i>
+            <i class="material-icons button delete" title="Delete">delete</i>
+        </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Create the page layout using div element.</td>
+        <td><a href="p7.html">Practical-7</a></td>
+        <td class="status">Checked</td>
+        <td>
+            <i class="material-icons button edit" title="Edit">edit</i>
+            <i class="material-icons button delete" title="Delete">delete</i>
+        </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Create a page layout with content using div element.</td>
+        <td><a href="p8.html">Practical-8</a></td>
+        <td class="status">Checked</td>
+        <td>
+            <i class="material-icons button edit" title="Edit">edit</i>
+            <i class="material-icons button delete" title="Delete">delete</i>
+        </td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Create a page layout with responsive horizontal navigational bar.</td>
+        <td><a href="9.html">Practical-9</a></td>
+        <td class="status">Checked</td>
+        <td>
+            <i class="material-icons button edit" title="Edit">edit</i>
+            <i class="material-icons button delete" title="Delete">delete</i>
+        </td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Create a page layout with responsive vertical navigational bar.</td>
+        <td><a href="p10.html">Practical-10</a></td>
+        <td class="status">Checked</td>
+        <td>
+            <i class="material-icons button edit" title="Edit">edit</i>
+            <i class="material-icons button delete" title="Delete">delete</i>
+        </td>
+    </tr>
 
+</table>
 </body>
 </html>
