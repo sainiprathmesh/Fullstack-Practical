@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: darkgrey;
+    background-color: yellow;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@ form button {
     border-radius: 10px;
     outline: none;
     border: none;
-    background-color: crimson;
+    background-color: darkolivegreen;
     color: white;
 }
 
@@ -92,7 +92,7 @@ form button {
 #progress {
     width: 120px;
     height: 100%;
-    background-color: crimson;
+    background-color: darkolivegreen;
     position: absolute;
     transition: .1s;
 }
@@ -106,5 +106,5 @@ form button {
     border-bottom: 20px solid transparent;
     right: -20px;
     top: 0;
-    border-left: 20px solid crimson;
+    border-left: 20px solid darkolivegreen;
 }
