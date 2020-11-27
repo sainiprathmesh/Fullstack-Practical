@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Javascript Multi Page Form</title>
+    <link href="../css/p19_style.css" rel="stylesheet">
 </head>
 <body>
+<div class="container">
+    <form id="form1">
+        <h3>CREATE ACCOUNT</h3>
+        <input placeholder="Enter Email" type="text">
+        <input placeholder="Enter Password" type="password">
+        <input placeholder="Confirm Password" type="password">
+        <div class="btn-box">
+            <button id="next1" type="button">Next</button>
+        </div>
+    </form>
 
+    <form id="form2">
+        <h3>SOCIAL LINKS</h3>
+        <input placeholder="Linkedin" type="text">
+        <input placeholder="GitHub" type="password">
+        <input placeholder="Facebook" type="password">
+        <div class="btn-box">
+            <button id="back1" type="button">Back</button>
+            <button id="next2" type="button">Next</button>
+        </div>
+    </form>
+
+    <form id="form3">
+        <h3>PERSONAL INFORMATION</h3>
+        <input placeholder="First Name" type="text">
+        <input placeholder="Last Name" type="password">
+        <input placeholder="Mobile No" type="password">
+        <div class="btn-box">
+            <button id="back2" type="button">Back</button>
+            <button type="button">Submit</button>
+        </div>
+    </form>
+    <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>Step-1</small></div>
+        <div class="step-col"><small>Step-2</small></div>
+        <div class="step-col"><small>Step-3</small></div>
+    </div>
+</div>
+<script src="../js/p19_javascript.js"></script>
 </body>
 </html>
